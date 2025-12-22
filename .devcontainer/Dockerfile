@@ -1,5 +1,5 @@
-# constuction à partir de l'image de base https://hub.docker.com/r/microsoft/devcontainers-php et la version PHP 8.3
-FROM mcr.microsoft.com/devcontainers/php:8.3
+# constuction à partir de l'image de base https://hub.docker.com/r/microsoft/devcontainers-php et la version PHP 8.4
+FROM mcr.microsoft.com/devcontainers/php:8.4
 
 RUN \
     # Met à jour la liste des paquets
