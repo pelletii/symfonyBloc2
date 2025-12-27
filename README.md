@@ -59,14 +59,36 @@ Si les scripts n'ont pas les bonnes permissions, utilisez la commande chmod pour
 
    Le Codespace ainsi créé contient toutes les configurations nécessaires pour démarrer le développement.
 
-### Serveur php et service mariadb (avec la base métier)
+### Serveur php, service mariadb (avec la base métier) et les outils symfony (composer et symfony CLI)
 
 1. **Pour lancer les services** :
    - Dans le terminal, exécutez le script `start.sh` :
      ```bash
      ./start.sh
      ```
-   Ce script démarre le serveur PHP intégré sur le port 8000, démarre mariadb 
+   Ce script démarre le serveur PHP intégré sur le port 8000, démarre mariadb
+
+   Cet environnement contient **Composer** et **Symfony CLI**. 
+   Pour vérifier que tout fonctionne, saisir les commandes suivantes:
+
+      ```bash
+      composer --version
+      ```
+      Puis
+      ```bash
+      symfony -v
+      ```
+   Avant de commencer, il est indispensable de vérifier que vous possédez l’environnement nécessaire à la création d’un projet Symfony. Pour cela exécutez la commande suivante à partir d’un terminal de commande :
+   ```bash
+   symfony check:requirements
+   ```
+Il est indispensable que la réponse soit OK.
+
+   ![alt text](image.png)
+
+
+
+
 
   
 2. **Ouvrir le service php dans un navigateur pour tester l'accès base de données** :

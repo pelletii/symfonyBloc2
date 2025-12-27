@@ -40,7 +40,11 @@ RUN \
     && service mariadb start \
     && mysql -e "CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin_password';" \
     && mysql -e "GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;"  \
-    && mysql -e "FLUSH PRIVILEGES;"
+    && mysql -e "FLUSH PRIVILEGES;" \
+    # Install Symfony CLI
+    && curl -sS https://get.symfony.com/cli/installer | bash \
+    && mv /root/.symfony5/bin/symfony /usr/local/bin/symfony
+
 
 EXPOSE 3306 8080
 

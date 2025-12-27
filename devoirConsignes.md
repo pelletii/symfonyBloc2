@@ -1,4 +1,4 @@
-# Les routines stockées - Les procédures stockées
+# Création du projet Symfony
 
 ## Découverte des procédures stockées
 
@@ -13,7 +13,7 @@
 1. exécuter le Script   
     ```bash
       ./database/script/initRout.sh 
-      ```
+    El```
 2. Ouvrir la page d'accueil du site élevage
     ```
     PORTS-> clic sur adresse site web
