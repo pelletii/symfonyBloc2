@@ -1,4 +1,4 @@
-# Création du projet Symfony
+# Exécuter le projet Symfony
 
 ## Découverte des procédures stockées
 
