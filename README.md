@@ -9,7 +9,7 @@ Voici l'arborescence du dépôt et le rôle des différents composants. Les fich
 |  └── Dockerfile # Dockerfile pour construire l'image du Dev Container  dans mariadb 
 ├── .github/ # config pour les alertes de dépendances (sécurité)
 ├── .vscode/ 
-├── site # Dossier racine du serveur web
+├── SymfonyElevage # Dossier racine du serveur web
 ├── start.sh # Script de lancement pour démarrer le service mariadb et les instances web du site et de phpMyAdmin.
 └── stop.sh # Script pour arreter le service mariadb et les instances web du site et de phpMyAdmin.
 
