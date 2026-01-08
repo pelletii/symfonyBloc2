@@ -117,6 +117,55 @@ ajouter une route ```/breeding/report/{year}```
 - {year} est optionnel
 - par défaut: année en cours
 
+# Le moteur de Template Twig
+## L'environnement de développement
+
+Par défaut, votre projet est en mode ```dev```. Ce paramétrage se fait dans le fichier ```.env``` à la ligne suivante:
+
+**```APP_ENV=dev```**
+Dans Symphony il existe les modes suivants:
+-  ```dev``` : pour apprendre et corriger
+-  ```prod``` : Livrer proprement
+Un site en production doit toujours être en mode ```prod```. Les différences entre ces deux modes sont les suivantes:
+![alt text](image-6.png)
+
+La toolbar s'affiche automatiquement en bas de vos vue si vous êtes en mode ```dev``` . Il ne faut pas s'inquiéter. Pour la supprimer et voir le rendu final vous pouvez passer temporairement en mode ```prod``` . Attention à bien revenir en mode ```dev``` pour avoir un détail des erreurs concernant les fonctionnalités que vous développez.
+
+
+
+## Analyse d'une route avec une vue Twig
+soit la route suivante 
+
+```
+     //Première vue Twig
+    #[Route('/profil/{nom}/{prenom}', name: 'user_profil')]
+    public function profil(string $nom, string $prenom): Response
+    {
+        return $this->render('home/firstView.html.twig', [
+            'nom' => $nom,
+            'prenom' => $prenom
+        ]);
+    }
+```
+Soit la vue ```firstView.html.twig ``` :
+```
+<h2>Bienvenue à {{ nom }} {{ prenom }}</h2>
+```
+### Répondre aux questions:
+1. quelle url doit on saisir pour exécuter cette route?
+2. Quel est le nom de la route?
+Pour Saisir les deux scripts dans le projet Symfony:
+1. Je crée ma route dans _______________
+2. Je crée ma vue dans le répertoire _____________
+3. Mettre en oeuvre cette route et tester la. Le résultat doit être semblable à 
+
+![alt text](image-5.png)
+
+4. modifier la vue et la route pour afficher l'âge en plus du nom et prénom
+5. Modifier la vue afin d'afficher le message suivant si l'utilisateur est mineur : "Vous n'avez pas l'autorisation de réserver un animal pour l'adoption"
+
+
+
 
 
 
