@@ -165,6 +165,54 @@ Pour Saisir les deux scripts dans le projet Symfony:
 5. Modifier la vue afin d'afficher le message suivant si l'utilisateur est mineur : "Vous n'avez pas l'autorisation de réserver un animal pour l'adoption"
 
 
+# TP Symfony : Création d'une interface pour un refuge d'animaux domestiques
+## Objectif
+Créer une interface web pour un refuge d'animaux domestiques en utilisant **Symfony et Bootstrap**. L'interface devra inclure :
+- Un header avec un titre.
+- Une barre de navigation avec deux options.
+- Deux pages Twig distinctes pour chaque option de la barre de navigation et une page Twig pour l'accueil
+- Un footer.
+
+## Structure demandée
+### Header
+- *Titre* : "Refuge pour animaux domestiques"
+- Utiliser une balise ```<header>``` avec une classe Bootstrap pour le style (par exemple, bg-primary text-white p-3).
+### Barre de navigation
+Utiliser le composant Navbar de Bootstrap. Vous mettrez en place les deux options suivantes :
+- **"Gestion des animaux"**:
+    - Lien vers une route Symfony (par exemple, ```/animaux```).
+    - La page Twig associée affichera dans le ```<body>``` :
+    ```
+    <h1>Bienvenu sur cette page.</h1>
+    <p>Vous allez pouvoir consulter les animaux disponibles à l'adoption.</p>
+    ```
+- **"Gestion des adoptions"**:
+    - Lien vers une route Symfony (par exemple, ```/adoptions```).
+    - La page Twig associée affichera dans le ```<body>``` :
+
+    ```
+    <h1>Bienvenue au refuge.</h1>
+    <p>N'hésitez pas à effectuer une demande d'adoption pour un de nos animaux.</p>
+
+    ```
+### footer
+- Utiliser une balise ```<footer>``` avec une classe Bootstrap (par exemple, bg-dark text-white p-3).
+- Contenu libre (par exemple, copyright, informations de contact).
+
+### Page d'accueil
+Elle s'affichera à l'ouverture du site.
+ - La page Twig associée affichera dans le ```<body>``` :
+    ```
+    <h1>Bienvenu Au refuge.</h1>
+    <p>Offrez une seconde chance, adoptez un compagnon pour la vie. 
+    Ils n’attendent qu’un foyer… et peut-être le vôtre. » </p>
+    ```
+
+
+
+
+
+
 
 
 
