@@ -1,6 +1,6 @@
 **Le cours symfony se trouve sur l'ENT. La suite concerne uniquement les exercices à réaliser**
 
-# Créer le projet Symfony
+# Créer le projet Symfony.
 Avant de commencer  **supprimer le dossier SymfonyElevage**
 
 Saisir la commande suivante afin de créer le projet **SymfonyElevage**
