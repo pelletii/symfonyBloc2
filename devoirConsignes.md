@@ -1,10 +1,6 @@
 **Le cours symfony se trouve sur l'ENT. La suite concerne uniquement les exercices à réaliser**
 
-# Créer le projet Symfony
-Saisir la commande suivante afin de créer le projet **SymfonyElevage**
-```bash
-symfony new SymfonyElevage --version=lts --webapp
-```
+
 # Lancer le serveur web 
 __Les manipulations suivantes sont à exécuter à chaque lancement du Codespace.__
 1. Se positionner sur le dossier du projet

@@ -106,6 +106,46 @@ __Attention, à ne réaliser qu'à la création d'un nouveau CodeSpace basé sue
    - avec phpMyAdmin sur le port 8080
       - se positionner sur l'onglet *PORTS* de la console de débogage et cliquer sur l'icone d'internet
     ![alt text](image-7.png)
+
+# Les instructions suivantes sont à réaliser à la création du CodeSpace ou à chaque PULL ou Clonage du dépôt distant.
+Si vous lancez les serveurs pour exécuter votre votre application symfony, cela ne fonctionnera pas. 
+En effet, dans un projet Symfony standard, ces dossiers ne sont pas poussés sur GitHub :
+
+```
+/vendor
+/var
+/node_modules
+.env.local
+```
+
+## Pourquoi ?
+- vendor/ → dépendances installées avec Composer
+- var/ → cache et logs
+- .env.local → configuration locale (sécurité)
+
+POur que tout fonctionne réaliser les étapes suivantes:
+1. se positionner sur le projet
+   ```bash
+   cd ./SymfonyElevage/
+
+   ```
+2. Lancer la commande suivante pour créer correctement *vendor/*
+   ```bash
+   composer install
+   ```
+3. Lancer le serveur web
+
+```bash
+symfony serve -d
+```
+Un troisième port est ouvert
+![alt text](image-1.png)
+Cliquer sur le lien pour ouvrir la page index du projet
+![alt text](image-2.png)
+
+
+et vendor/ sera recréé.
+
   
 
 
