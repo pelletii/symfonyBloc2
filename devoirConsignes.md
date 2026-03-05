@@ -1,14 +1,12 @@
 **Le cours symfony se trouve sur l'ENT. La suite concerne uniquement les exercices à réaliser**
 
-# Créer le projet Symfony.
-Avant de commencer  **supprimer le dossier SymfonyElevage**
-
+# Créer le projet Symfony
 Saisir la commande suivante afin de créer le projet **SymfonyElevage**
 ```bash
 symfony new SymfonyElevage --version=lts --webapp
 ```
-# Lancer le serveur web
-Les manipulations suivantes sont à exécuter à chaque lancement du Codespace.
+# Lancer le serveur web 
+__Les manipulations suivantes sont à exécuter à chaque lancement du Codespace.__
 1. Se positionner sur le dossier du projet
 Le serveur doit être lancé à partir du dossier qui contient le projet. C'est pour cela qu'il est important de se positionner sur ce dossier en premier.
 ```bash
@@ -206,7 +204,11 @@ Elle s'affichera à l'ouverture du site.
     <h1>Bienvenu Au refuge.</h1>
     <p>Offrez une seconde chance, adoptez un compagnon pour la vie. 
     Ils n’attendent qu’un foyer… et peut-être le vôtre. » </p>
+
     ```
+# DOCTRINE - La gestion des données
+## Les entités
+
 
 
 

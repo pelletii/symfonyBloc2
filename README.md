@@ -1,4 +1,5 @@
-# Codespace PHP avec mariadb
+__Les instructions suivantes sont à réaliser à la création d'un codespace basé sur ce dépôt.__
+# Codespace PHP avec mariadb et Symfony
 
 ## Arborescence du dépôt
 
@@ -68,8 +69,7 @@ Si les scripts n'ont pas les bonnes permissions, utilisez la commande chmod pour
      ```
    Ce script démarre le serveur PHP intégré sur le port 8000, démarre mariadb
 
-   Cet environnement contient **Composer** et **Symfony CLI**. 
-   Pour vérifier que tout fonctionne, saisir les commandes suivantes:
+   - Cet environnement contient **Composer** et **Symfony CLI**. Pour vérifier que tout fonctionne, saisir les commandes suivantes:
 
       ```bash
       composer --version
@@ -90,10 +90,12 @@ Il est indispensable que la réponse soit OK.
 
 
 
-  
-2. **Ouvrir le service php dans un navigateur pour tester l'accès base de données** :
-   - Accédez à `http://localhost:8000` pour voir la page d'accueil de l'application.
-
+2. **Création de la base de données BdElevage** :
+__Attention, à ne réaliser qu'à la création d'un nouveau CodeSpace basé sue le dépôt.__
+   - Au premier démarrage, créez la bdd métier avec le fichier sql
+      ```bash
+      ./database/script/initBdd.sh 
+      ``` 
 3. **Accèder à la BDD** :
    - En mode commande depuis le client mysql en ligne de commande
    Exemple : 
@@ -101,11 +103,9 @@ Il est indispensable que la réponse soit OK.
       mysql -u bdElevage-web -p
       ```
         
-   - avec phpMyAdmin sur le port 8080   
-   - Le mot de passe : elevage-intra
+   - avec phpMyAdmin sur le port 8080
+      - se positionner sur l'onglet *PORTS* de la console de débogage et cliquer sur l'icone d'internet
+    ![alt text](image-7.png)
+  
 
-4. **Initialiser la base de données BdElevage** :
-   - Au premier démarrage, créez la bdd métier avec le fichier sql
-      ```bash
-      ./database/script/initBdd.sh 
-      ```
+
